@@ -121,7 +121,7 @@
   <a class="skip-link" href="#thuc-don">Bỏ qua, xem thực đơn</a>
 
   <!-- ============================ THANH ĐẦU TRANG ============================ -->
-  <header class="topbar">
+  <header class="topbar" id="topbar">
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Mở menu điều hướng">
 
     <div class="wrap topbar-inner">
@@ -130,12 +130,12 @@
       </a>
 
       <nav class="nav" aria-label="Điều hướng chính">
-        <a href="#thuc-don">Bún</a>
-        <a href="#lau">Lẩu</a>
-        <a href="#do-nhung">Đồ nhúng</a>
-        <a href="#banh">Bánh</a>
-        <a href="#uu-dai">Ưu đãi</a>
-        <a href="#dia-chi">Địa chỉ</a>
+        <a href="#thuc-don" data-nav>Bún</a>
+        <a href="#lau" data-nav>Lẩu</a>
+        <a href="#do-nhung" data-nav>Đồ nhúng</a>
+        <a href="#banh" data-nav>Bánh</a>
+        <a href="#uu-dai" data-nav>Ưu đãi</a>
+        <a href="#dia-chi" data-nav>Địa chỉ</a>
       </nav>
 
       <a class="btn btn--small btn--purple" href="tel:0901737393">Gọi đặt món</a>
@@ -150,7 +150,7 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
 
-        <div class="hero-copy">
+        <div class="hero-copy reveal">
           <h1 id="hero-title">Bún bò Huế O Hiền</h1>
           <p class="lead">Tô bún nóng hổi, nồi lẩu đuôi bò, lẩu riêu cua cho cả bàn và đĩa bánh ăn kèm. Ghé quán ở Cầu Giấy hoặc gọi điện để đặt món.</p>
 
@@ -173,7 +173,7 @@
           </ul>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
+        <div class="hero-art reveal" aria-hidden="true">
           <svg viewBox="0 -50 220 200" style="--broth:#D9701C">
             <g class="steam">
               <path d="M88 30 C78 14 98 4 88 -12 S84 -32 92 -42"/>
@@ -207,7 +207,7 @@
     </section>
 
     <!-- ============================ THỰC ĐƠN BÚN ============================ -->
-    <section id="thuc-don" class="section menu" aria-labelledby="menu-title">
+    <section id="thuc-don" class="section menu reveal" aria-labelledby="menu-title">
       <div class="wrap">
         <header class="section-head">
           <h2 id="menu-title">Thực đơn bún</h2>
@@ -334,7 +334,7 @@
     </section>
 
     <!-- ============================ GỌI THÊM ============================ -->
-    <section id="goi-them" class="section extras" aria-labelledby="extras-title">
+    <section id="goi-them" class="section extras reveal" aria-labelledby="extras-title">
       <div class="wrap">
         <header class="section-head">
           <h2 id="extras-title">Gọi thêm cho tô bún</h2>
@@ -358,7 +358,7 @@
     </section>
 
     <!-- ============================ LẨU ============================ -->
-    <section id="lau" class="section lau" aria-labelledby="lau-title">
+    <section id="lau" class="section lau reveal" aria-labelledby="lau-title">
       <div class="wrap">
         <header class="section-head">
           <h2 id="lau-title">Lẩu O Hiền</h2>
@@ -448,7 +448,7 @@
     </section>
 
     <!-- ============================ ĐỒ NHÚNG ============================ -->
-    <section id="do-nhung" class="section dip" aria-labelledby="dip-title">
+    <section id="do-nhung" class="section dip reveal" aria-labelledby="dip-title">
       <div class="wrap">
         <header class="section-head">
           <h2 id="dip-title">Đồ nhúng</h2>
@@ -536,7 +536,7 @@
     </section>
 
     <!-- ============================ BÁNH O HIỀN ============================ -->
-    <section id="banh" class="section banh" aria-labelledby="banh-title">
+    <section id="banh" class="section banh reveal" aria-labelledby="banh-title">
       <div class="wrap banh-grid">
 
         <div class="banh-figures">
@@ -586,22 +586,22 @@
     </section>
 
     <!-- ============================ ƯU ĐÃI ============================ -->
-    <section id="uu-dai" class="section promo-wrap" aria-labelledby="promo-title">
+    <section id="uu-dai" class="section promo-wrap reveal" aria-labelledby="promo-title">
       <div class="wrap">
         <div class="promo">
           <div class="promo-copy">
             <h2 id="promo-title">Nhận ưu đãi từ O Hiền</h2>
             <p>Quét mã QR để nhận thêm nhiều ưu đãi dành cho khách của quán.</p>
           </div>
-          <a href="https://www.facebook.com/ohienquan" target="_blank">
-           <img class="qr" src="images/facebook-qr-code.png" alt="Mã QR nhận ưu đãi từ O Hiền" width="150" height="150">
+          <a href="https://www.facebook.com/ohienquan" target="_blank" rel="noopener">
+           <img class="qr" src="images/facebook-qr-code.png" alt="Mã QR nhận ưu đãi từ O Hiền" width="150" height="150" loading="lazy">
           </a>
         </div>
       </div>
     </section>
 
 
-    <section id="dia-chi" class="section places" aria-labelledby="places-title">
+    <section id="dia-chi" class="section places reveal" aria-labelledby="places-title">
       <div class="wrap">
         <header class="section-head">
           <h2 id="places-title">Ghé quán</h2>
@@ -663,13 +663,97 @@
   <!-- Nút gọi cố định trên điện thoại -->
   <a class="fab-call" href="tel:0901737393" aria-label="Gọi đặt món 0901 737 393">Gọi đặt món</a>
 
+  <!-- Nút về đầu trang -->
+  <button class="back-to-top" id="backToTop" aria-label="Về đầu trang" type="button">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
   <script>
-    // Đóng menu điện thoại sau khi bấm một liên kết
-    document.querySelectorAll('.nav a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        document.getElementById('nav-toggle').checked = false;
+    (function () {
+      'use strict';
+
+      var navToggle = document.getElementById('nav-toggle');
+      var topbar = document.getElementById('topbar');
+      var backToTop = document.getElementById('backToTop');
+      var navLinks = document.querySelectorAll('[data-nav]');
+      var revealEls = document.querySelectorAll('.reveal');
+      var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function closeMobileNav() {
+        if (navToggle) navToggle.checked = false;
+      }
+
+      navLinks.forEach(function (a) {
+        a.addEventListener('click', closeMobileNav);
       });
-    });
+
+      function onScroll() {
+        var y = window.scrollY || window.pageYOffset;
+
+        if (topbar) {
+          if (y > 12) topbar.classList.add('topbar--scrolled');
+          else topbar.classList.remove('topbar--scrolled');
+        }
+
+        if (backToTop) {
+          if (y > 500) backToTop.classList.add('is-visible');
+          else backToTop.classList.remove('is-visible');
+        }
+
+        if (!reducedMotion) {
+          var sections = ['thuc-don', 'lau', 'do-nhung', 'banh', 'uu-dai', 'dia-chi'];
+          var current = '';
+          for (var i = 0; i < sections.length; i++) {
+            var sec = document.getElementById(sections[i]);
+            if (sec) {
+              var rect = sec.getBoundingClientRect();
+              if (rect.top <= 140 && rect.bottom >= 140) {
+                current = sections[i];
+                break;
+              }
+            }
+          }
+          navLinks.forEach(function (link) {
+            var href = link.getAttribute('href') || '';
+            if (href === '#' + current) link.classList.add('is-active');
+            else link.classList.remove('is-active');
+          });
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      if (backToTop) {
+        backToTop.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+        });
+      }
+
+      if (!reducedMotion && 'IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+        revealEls.forEach(function (el, idx) {
+          el.style.transitionDelay = (idx % 2) * 80 + 'ms';
+          io.observe(el);
+        });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+
+      if (navToggle) {
+        navToggle.addEventListener('change', function () {
+          document.body.classList.toggle('nav-open', navToggle.checked);
+        });
+      }
+    })();
   </script>
 </body>
 </html>
