@@ -2,7 +2,6 @@
 
 Website giới thiệu và xem thực đơn cho nhà hàng **Bún bò Huế O Hiền** tại Cầu Giấy, Hà Nội. Dự án xây dựng bằng HTML + CSS + JavaScript thuần (không dùng framework), tối ưu cho cả desktop và mobile.
 
-![O Hiền](https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Vietnamese%20Hue%20beef%20noodle%20soup%20restaurant%20banner%20with%20purple%20deep%20and%20warm%20orange%20colors%2C%20bowl%20of%20bun%20bo%20hue%20with%20steam%2C%20minimal%20clean%20design&image_size=landscape_16_9)
 
 ---
 
